@@ -146,24 +146,24 @@ header aside {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: .6rem;
+    gap: 0.6rem;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-    transition: opacity .2s ease-in;
+    transition: opacity 0.2s ease-in;
     z-index: -99;
     visibility: collapse;
     opacity: 0;
   }
 
   .modal-user-open {
-    transition: opacity .2s ease-in;
+    transition: opacity 0.2s ease-in;
     visibility: visible;
     z-index: 99;
     opacity: 1;
   }
 
   .button-header {
-    font-size: clamp(.4rem, .8rem, 1rem);
-    padding: .4rem .8rem;
+    font-size: clamp(0.4rem, 0.8rem, 1rem);
+    padding: 0.4rem 0.8rem;
   }
 
   header aside {
@@ -180,11 +180,11 @@ header aside {
     width: 60vw;
     position: fixed;
     z-index: 99;
-    top: 10vh;
+    top: 10svh;
     right: -100vw;
     background: #f9fcff;
     padding: 2rem 0 0 0;
-    transition: all .2s ease-in;
+    transition: all 0.2s ease-in;
   }
 
   .menu-mobile ul {
@@ -200,9 +200,7 @@ header aside {
 
   .menu-mobile-open {
     right: 0;
-    transition: all .2s ease-in;
+    transition: all 0.2s ease-in;
     box-shadow: -40vw 0px 0px rgba(0, 0, 0, 0.2);
   }
-
-  
 }

@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: .2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 :root {
@@ -12,4 +12,51 @@
   --textos: "Manrope";
   --azul-claro: #1e5ce6;
   --azul-escuro: #193bde;
+}
+
+html,body{
+  overflow-x: hidden;
+}
+
+.separator-waves {
+  position: absolute;
+  top: 70vh;
+  width: 100%;
+  height: 15vh;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.separator-waves-parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.separator-waves-parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.separator-waves-parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.separator-waves-parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.separator-waves-parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .separator-waves {
+    top: 69svh;
+  }
 }

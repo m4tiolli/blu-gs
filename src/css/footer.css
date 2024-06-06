@@ -1,0 +1,42 @@
+footer {
+  background: rgb(30, 92, 230);
+  background: linear-gradient(
+    133deg,
+    rgba(30, 92, 230, 1) 49%,
+    rgba(25, 59, 222, 1) 79%
+  );
+  height: 20svh;
+  margin-top: 16svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-logo-footer {
+  height: 60%;
+}
+
+.logo-footer {
+  height: 100%;
+}
+
+.footer-infos, .footer-copy, .div-logo-footer {
+  width: 33vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+  color: #fff;
+  font-family: var(--textos);
+}
+
+.footer-infos {
+  font-size: clamp(.8vw, .9vw, 1vw);
+  font-weight: 300;
+}
+
+.footer-copy {
+  font-weight: 400;
+  font-size: clamp(1vw, 1.3vw, 1.5vw);
+}

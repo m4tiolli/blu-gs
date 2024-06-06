@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="./src/css/style.css">
   <link rel="stylesheet" href="src/css/header.css">
+  <link rel="stylesheet" href="src/css/sections.css">
+  <link rel="stylesheet" href="src/css/footer.css">
 </head>
 
 <body>
@@ -45,10 +47,35 @@
     </aside>
   </header>
   <main>
-
+    <section id="section1">
+      <h1>Blu - Combatendo a poluição marinha</h1>
+      <h4>Saiba porque estamos aqui e o que estamos dispostos a fazer pelos oceanos</h4>
+      <button>Saiba mais</button>
+    </section>
+    <svg class="separator-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="separator-waves-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="#fff" style="opacity:0.7;"></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="#fff" style="opacity:0.5;"></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="#fff" style="opacity:0.3;"></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff"></use>
+      </g>
+    </svg>
   </main>
   <footer>
-
+    <div class="footer-infos">
+      <p>Feito por Gabriel Matiolli & Leonardo Taschin</p>
+    </div>
+    <div class="footer-copy">
+      <p>Blu - Combatendo a poluição marinha</p>
+      <p>&copy; Todos os direitos reservados</p>
+    </div>
+    <div class="div-logo-footer">
+      <img class="logo-footer" src="./src/assets/logo-blu-white.svg" alt="">
+    </div>
   </footer>
 
 
