@@ -71,7 +71,7 @@ header aside {
   gap: 0.6rem;
 }
 
-header aside button {
+.button-header {
   background: rgb(30, 92, 230);
   background: linear-gradient(
     133deg,
@@ -89,11 +89,11 @@ header aside button {
   cursor: pointer;
 }
 
-header aside button:hover {
+.button-header:hover {
   opacity: 0.8;
 }
 
-header aside button:active {
+.button-header:active {
   transform: translateY(2px);
 }
 
@@ -126,7 +126,7 @@ header aside button:active {
     z-index: 999;
   }
 
-  .buttons-mobile button {
+  .buttons-mobile > button {
     border: 1px solid rgba(0, 0, 0, 0.2);
     font-size: 1.5rem;
     padding: 0.3rem 0.6rem;
@@ -137,10 +137,33 @@ header aside button:active {
   .modal-user {
     position: fixed;
     top: 10vh;
-    right: 1vw;
-    background-color: red;
+    right: 8vw;
+    background-color: #fff;
     width: 30vw;
     height: 10vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    transition: opacity .2s ease-in;
+    z-index: -99;
+    visibility: collapse;
+    opacity: 0;
+  }
+
+  .modal-user-open {
+    transition: opacity .2s ease-in;
+    visibility: visible;
+    z-index: 99;
+    opacity: 1;
+  }
+
+  .button-header {
+    font-size: clamp(.4rem, .8rem, 1rem);
+    padding: .4rem .8rem;
   }
 
   header aside {
@@ -180,4 +203,6 @@ header aside button:active {
     transition: all .2s ease-in;
     box-shadow: -40vw 0px 0px rgba(0, 0, 0, 0.2);
   }
+
+  
 }
