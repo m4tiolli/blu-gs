@@ -11,12 +11,13 @@
     rgba(30, 92, 230, 1) 49%,
     rgba(25, 59, 222, 1) 79%
   );
+  position: relative;
 }
 
 #section1 h1 {
   font-family: var(--titulos);
   color: #fff;
-  font-size: clamp(6vw, 3vw, 4vw);
+  font-size: clamp(3rem, 3.5rem, 4rem);
   text-align: center;
 }
 
@@ -54,7 +55,7 @@
 
 @media only screen and (max-width: 768px) {
   #section1 {
-    height: 75svh;
+    height: 80svh;
   }
   #section1 h1 {
     font-size: clamp(1.4rem, 2rem, 2.5rem);
@@ -62,6 +63,7 @@
   #section1 h4 {
     font-size: clamp(0.6rem, 1rem, 1.5rem);
     text-align: center;
+    width: 90%;
   }
   #section1 button {
     font-size: clamp(1rem, 1.5rem, 2rem);
