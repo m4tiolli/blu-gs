@@ -22,16 +22,16 @@ document.getElementsByClassName('button-user')[0].addEventListener('click', func
 const addRule = (function (style) {
   const sheet = document.head.appendChild(style).sheet;
   let lastIndex = -1;
-  
+
   return function (selector, css) {
     const propText = typeof css === "string" ? css : Object.keys(css).map(function (p) {
       return p + ":" + (p === "content" ? "'" + css[p] + "'" : css[p]);
     }).join(";");
-    
+
     if (lastIndex !== -1) {
       sheet.deleteRule(lastIndex);
     }
-    
+
     lastIndex = sheet.insertRule(selector + "{" + propText + "}", sheet.cssRules.length);
   };
 })(document.createElement("style"));
@@ -41,8 +41,10 @@ const updateCurrent = () => {
   const scrollY = window.scrollY;
   if (scrollY >= 0 && scrollY < 400) {
     current = 1;
-  } else if (scrollY >= 400) {
+  } else if (scrollY >= 400 && scrollY <= 950) {
     current = 2;
+  } else if (scrollY >= 950) {
+    current = 3
   } else {
     current = 0;
   }

@@ -20,14 +20,14 @@ html,body{
 }
 
 main {
-  margin-top: 12vh;
+  margin-top: 12svh;
 }
 
 .separator-waves {
   position: absolute;
   bottom: 0svh;
   width: 100%;
-  height: 15vh;
+  height: 15svh;
   min-height: 100px;
   max-height: 150px;
 }
