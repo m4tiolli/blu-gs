@@ -18,6 +18,10 @@ html,body{
   overflow-x: hidden;
 }
 
+main {
+  margin-top: 12vh;
+}
+
 .separator-waves {
   position: absolute;
   top: 70vh;
@@ -57,6 +61,9 @@ html,body{
 
 @media only screen and (max-width: 768px) {
   .separator-waves {
-    top: 69svh;
+    top: 70svh;
+  }
+  main {
+    margin-top: 10vh;
   }
 }
