@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="./src/css/style.css">
   <link rel="stylesheet" href="src/css/header.css">
-  <link rel="stylesheet" href="src/css/sections.css">
+  <link rel="stylesheet" href="src/css/sections/1.css">
+  <link rel="stylesheet" href="src/css/sections/2.css">
   <link rel="stylesheet" href="src/css/footer.css">
 </head>
 
@@ -51,19 +52,49 @@
       <h1>Blu - Combatendo a poluição marinha</h1>
       <h4>Saiba porque estamos aqui e o que estamos dispostos a fazer pelos oceanos</h4>
       <button>Saiba mais</button>
+      <svg class="separator-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="separator-waves-parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="#fff" style="opacity:0.7;"></use>
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="#fff" style="opacity:0.5;"></use>
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="#fff" style="opacity:0.3;"></use>
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff"></use>
+        </g>
+      </svg>
     </section>
-    <svg class="separator-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-      <defs>
-        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
-      </defs>
-      <g class="separator-waves-parallax">
-        <use xlink:href="#gentle-wave" x="48" y="0" fill="#fff" style="opacity:0.7;"></use>
-        <use xlink:href="#gentle-wave" x="48" y="3" fill="#fff" style="opacity:0.5;"></use>
-        <use xlink:href="#gentle-wave" x="48" y="5" fill="#fff" style="opacity:0.3;"></use>
-        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff"></use>
-      </g>
-    </svg>
+    <section id="section2">
+      <div id="part1-section2">
+        <div class="div-img-section2">
+          <img src="src/assets/tartaruga.png" alt="Tartaruga">
+        </div>
+        <div class="content-section2">
+          <h1>Por quê estamos aqui</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit suscipit eum minima dicta
+            explicabo vero error exercitationem nulla ipsam dolorem labore, quisquam quo consectetur porro culpa
+            praesentium, maxime enim.
+            Officia qui tenetur nisi, maxime debitis iste, asperiores voluptatibus commodi rerum mollitia sequi beatae
+            veritatis!
+          </p>
+        </div>
+      </div>
+      <div id="part2-section2">
+        <div class="div-img-section2">
+          <img src="src/assets/coral.png" alt="Coral">
+        </div>
+        <div class="content-section2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit suscipit eum minima dicta
+            explicabo vero error exercitationem nulla ipsam dolorem labore, quisquam quo consectetur porro culpa
+            praesentium, maxime enim.
+          </p>
+        </div>
+
+      </div>
+    </section>
   </main>
   <footer>
     <div class="footer-infos">
