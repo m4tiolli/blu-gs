@@ -1,6 +1,7 @@
 #section2 {
   width: 100dvw;
   padding-top: 15svh;
+  padding-bottom: 10svh;
   position: relative;
   display: block;
 }
@@ -53,33 +54,33 @@
 }
 
 @media only screen and (max-width: 768px) {
-  #section2 {
-    height: 130svh;
-  }
   .part1-section2,
   .part2-section2 {
     width: 100%;
     flex-direction: column-reverse;
     position: relative;
     align-items: center;
-  }
-  .part1-section2 {
     height: 70svh;
-  }
-  .part2-section2 {
-    height: 55svh;
   }
   .content-section2 {
     width: 90dvw;
     margin: auto;
     padding: 0;
   }
+  .div-img-section1 {
+    height: 20svh;
+    width: 20svh;
+    }
   .div-img-section2 {
-    height: 30%;
-    width: fit-content;
+    height: 20svh;
+    width: 20svh;
   }
   .part2-section2 .div-img-section2 {
-    width: fit-content;
-    height: 50%;
+    width: 20svh;
+    height:20svh;
   }
+}
+
+#poluicao{
+  border-radius: 15%;
 }

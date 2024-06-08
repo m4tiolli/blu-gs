@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Blu</title>
+  <link rel="shortcut icon" href="./src/assets/blu-icon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./src/css/login.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+  <div>
+      <h1>Fazer Login</h1>
+      
+      <span class="flex flex-col items-left">
+        <input id="usuario" placeholder="Usuário" type="text" class="border-[1px] border-grey-900 bg-[#efefef] px-4 py-2 outline-blue-500 rounded-lg">
+        <p id="erro-usuario" class="h-4 font-semibold text-red-700 text-md"></p>
+      </span>
+      <span class="flex flex-col items-left">  
+        <input id="senha" placeholder="Senha" type="password" class="border-[1px] border-grey-900 bg-[#efefef] px-4 py-2 outline-blue-500 rounded-lg">
+        <p id="erro-senha" class="h-4 font-semibold text-red-700 text-md"></p>
+      </span>
+      <button
+        class="button"
+        onclick="handleLogin()">Entrar</button>
+        <p class="font-medium text-sm">Não possui conta? <a href="./cadastro.html" class="underline text-blue-700">Criar uma conta</a></p>
+        <a href="./index.html" class="underline text-blue-700">Voltar</a>
+        </div>
+
+  <script src="./src/scripts/login.js"></script>
+</body>
+
+</html>

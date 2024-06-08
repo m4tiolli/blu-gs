@@ -1,0 +1,25 @@
+#section6 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10svh;
+}
+
+#section6 h1 {
+  background: linear-gradient(
+    133deg,
+    rgba(30, 92, 230, 1) 49%,
+    rgba(25, 59, 222, 1) 79%
+  );
+  background-clip: text;
+  color: transparent;
+  font-family: var(--titulos);
+  font-weight: 800;
+  font-size: clamp(3rem, 3.5rem, 4rem);
+  padding-bottom: 10svh;
+}
+
+#section6 .cont1 p, #section6 .cont2 p {
+color: #1a1a1a;
+}
