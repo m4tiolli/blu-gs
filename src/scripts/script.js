@@ -41,11 +41,19 @@ const updateCurrent = () => {
   const scrollY = window.scrollY;
   if (scrollY >= 0 && scrollY < 400) {
     current = 1;
-  } else if (scrollY >= 400 && scrollY <= 950) {
+  } else if (scrollY >= 400 && scrollY <= 2000) {
     current = 2;
-  } else if (scrollY >= 950) {
+  } else if (scrollY >= 2000 && scrollY <= 3300) {
     current = 3
-  } else {
+  } else if (scrollY >= 3300 && scrollY <= 4300) {
+    current = 4
+  } else if (scrollY >= 4300 && scrollY <= 5500) {
+    current = 5
+  } else if (scrollY >= 5500 && scrollY <= 6500) {
+    current = 6
+  } else if (scrollY >= 6500 && scrollY <= 8000) {
+    current = 7
+  }  else {
     current = 0;
   }
   return current;

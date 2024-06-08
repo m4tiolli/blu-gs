@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="src/css/sections/1.css">
   <link rel="stylesheet" href="src/css/sections/2.css">
   <link rel="stylesheet" href="src/css/sections/3.css">
+  <link rel="stylesheet" href="src/css/sections/4.css">
+  <link rel="stylesheet" href="src/css/sections/5.css">
+  <link rel="stylesheet" href="src/css/sections/6.css">
+  <link rel="stylesheet" href="src/css/sections/7.css">
   <link rel="stylesheet" href="src/css/footer.css">
 </head>
 
@@ -22,14 +26,14 @@
     </div>
     <div class="buttons-mobile">
       <button class="button-mobile button-user">
-        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-user" ></i>
       </button>
       <button class="button-mobile button-burger">
         <span>&#9776;</span>
       </button>
       <div class="modal-user">
-        <button class="button-header">Login</button>
-        <button class="button-header">Criar conta</button>
+        <button class="button-header" onclick="redirectLogin()">Login</button>
+        <button class="button-header" onclick="redirectCadastro()">Criar conta</button>
       </div>
     </div>
     <nav>
@@ -44,8 +48,8 @@
       </ul>
     </nav>
     <aside>
-      <button class="button-header">Login</button>
-      <button class="button-header">Criar conta</button>
+      <button class="button-header" onclick="redirectLogin()">Login</button>
+      <button class="button-header" onclick="redirectCadastro()">Criar conta</button>
     </aside>
   </header>
   <main>
@@ -69,51 +73,190 @@
     <section id="section2">
       <div class="part1-section2">
         <div class="div-img-section2">
-          <img src="src/assets/tartaruga.png" alt="Tartaruga">
+          <img src="src/assets/tec.png" alt="Tecnologia">
         </div>
         <div class="content-section2">
           <h1>Por quê estamos aqui</h1>
           <p>
-            Os habitats marinhos são essenciais para a saúde do nosso planeta, abrigando uma enorme diversidade de vida
-            marinha e contribuindo para a regulação do clima.
+            A poluição marinha é um dos maiores desafios ambientais do nosso tempo, ameaçando a saúde dos oceanos e a
+            vida que eles sustentam. Na Blu, estamos comprometidos em combater esse problema de frente. Utilizando
+            tecnologias inovadoras, monitoramos e analisamos a qualidade da água, ajudando a preservar os habitats
+            marinhos para as futuras gerações. Junte-se a nós nessa missão e faça a diferença para um planeta mais
+            saudável!
           </p>
         </div>
       </div>
       <div class="part2-section2">
         <div class="div-img-section2">
-          <img src="src/assets/coral.png" alt="Coral">
+          <img id="poluicao" src="src/assets/poluicao.jpeg" alt="Poluicao">
         </div>
         <div class="content-section2">
           <p>
-            Infelizmente, esses habitats estão enfrentando ameaças crescentes devido a atividades humanas.
+            Nosso objetivo é fornecer soluções práticas e eficientes para reduzir a poluição marinha. Com uma equipe
+            dedicada e apaixonada pelo meio ambiente, desenvolvemos ferramentas que permitem a qualquer pessoa
+            contribuir para a conservação dos oceanos. Explore nosso site para saber mais sobre nossas iniciativas e
+            como você pode se envolver.
           </p>
         </div>
-
       </div>
       <div class="part1-section2">
         <div class="div-img-section2">
-          <img src="src/assets/tartaruga.png" alt="Tartaruga">
+          <img id="oceano"
+            src="src/assets/transparent-ocean-background-rocky-coastline-ocean-fish-sea-cr-rocky-coastline-with-marine-life-and-ship-serene66080c468e4c61.85152412.png"
+            alt="Oceano">
         </div>
         <div class="content-section2">
           <p>
-            Cerca de 50% dos recifes de coral do mundo já foram destruídos ou gravemente danificados.
+            Os habitats marinhos são essenciais para a saúde do nosso planeta, abrigando uma enorme diversidade de vida
+            marinha e contribuindo para a regulação do clima. No entanto, esses ecossistemas vitais estão sob ameaça
+            constante devido a atividades humanas como a pesca predatória, a poluição e as mudanças climáticas.
+            Aproximadamente 50% dos recifes de coral do mundo já foram destruídos ou gravemente danificados, e a
+            situação continua a piorar.
           </p>
         </div>
       </div>
       <div class="part2-section2">
         <div class="div-img-section2">
-          <img src="src/assets/coral.png" alt="Coral">
+          <img src="src/assets/informr.png" alt="informar">
         </div>
         <div class="content-section2">
           <p>
-            A pesca predatória, a poluição marinha e as mudanças climáticas estão levando a um rápido declínio de muitos
-            ecossistemas marinhos.
+            Na Blu, acreditamos que é possível reverter esse cenário. Estamos comprometidos em aumentar a
+            conscientização sobre a importância dos oceanos e em promover ações que protejam e restauram esses habitats.
+            Nossa missão é garantir que as futuras gerações possam desfrutar de mares limpos e cheios de vida.
           </p>
         </div>
       </div>
     </section>
     <section id="section3">
+      <svg class="separator-waves-inverse" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="separator-waves-parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="#fff" style="opacity:0.7;"></use>
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="#fff" style="opacity:0.5;"></use>
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="#fff" style="opacity:0.3;"></use>
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff"></use>
+        </g>
+      </svg>
       <h1>Nossa solução</h1>
+      <div class="cont1">
+        <p>Na Blu, usamos sensores subaquáticos de última geração para monitorar parâmetros cruciais como temperatura
+          da
+          água, níveis de pH e concentração de oxigênio. Esses dados são integrados em uma plataforma centralizada,
+          permitindo uma análise precisa e em tempo real das condições dos habitats marinhos. Essa abordagem inovadora
+          nos
+          ajuda a entender melhor o impacto das atividades humanas e a desenvolver estratégias eficazes de conservação.
+        </p>
+        <img src="src/assets/previa-circuito.jpg" alt="">
+      </div>
+      <div class="cont2">
+        <p>Através da nossa tecnologia, fornecemos informações vitais para governos, ONGs e comunidades locais,
+          capacitando-os a tomar decisões informadas e a implementar políticas de preservação mais eficazes. Juntos,
+          podemos criar um futuro onde os oceanos prosperam novamente.</p>
+        <img src="src/assets/1-preservacao-meio-ambiente-removebg-preview.png" alt="Nossa solução">
+      </div>
+    </section>
+    <section id="section4">
+      <h1>Nossos objetivos</h1>
+      <div class="cont1">
+        <p>
+          Nossa missão vai além de apenas monitorar a saúde dos oceanos. Queremos transformar dados em ações concretas
+          que
+          façam a diferença. Entre nossos objetivos estão a compreensão aprofundada das condições atuais dos habitats
+          marinhos, o desenvolvimento de estratégias de conservação baseadas em dados e a melhoria na gestão das áreas
+          marinhas protegidas.
+        </p>
+        <img src="src/assets/5064484.jpg" alt="missao">
+      </div>
+      <div class="cont2">
+        <p>
+          Além disso, buscamos promover a educação ambiental e aumentar a conscientização pública sobre a importância
+          dos
+          oceanos. Ao fomentar a pesquisa e a inovação em tecnologias sustentáveis, aspiramos a liderar uma nova era de
+          proteção marinha.
+        </p>
+        <img src="src/assets/educacao.jpg" alt="educar">
+      </div>
+      <svg class="separator-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="separator-waves-parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="#fff" style="opacity:0.7;"></use>
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="#fff" style="opacity:0.5;"></use>
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="#fff" style="opacity:0.3;"></use>
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff"></use>
+        </g>
+      </svg>
+    </section>
+    <section id="section5">
+      <h1>Público impactado</h1>
+      <div class="cont1">
+        <p>
+          Nossa iniciativa beneficia uma ampla gama de grupos, desde comunidades costeiras que dependem dos recursos
+          marinhos para subsistência, até cientistas e pesquisadores dedicados ao estudo dos oceanos. Também impactamos
+          positivamente pescadores artesanais, ONGs focadas em conservação marinha e jovens estudantes interessados em
+          sustentabilidade.
+        </p>
+        <img src="src/assets/impacto.png" alt="impacto">
+      </div>
+      <div class="cont2">
+        <p>
+          Com a colaboração de empresas e indústrias que buscam práticas mais sustentáveis, estamos criando uma rede de
+          suporte que reforça nossos esforços de conservação. Juntos, podemos garantir que nossos oceanos continuem a
+          ser
+          uma fonte de vida e prosperidade.
+        </p>
+        <img src="src/assets/sustentavel.jpg" alt="sustentavels">
+
+      </div>
+    </section>
+    <section id="section6">
+      <h1>Benefícios</h1>
+      <div class="cont1">
+        <p>
+          As nossas ações têm um impacto direto e positivo na recuperação dos ecossistemas marinhos. Ao contribuir para
+          a
+          recuperação de recifes de coral e outras áreas degradadas, protegemos a biodiversidade e ajudamos a reduzir a
+          poluição marinha. Políticas informadas por dados precisos permitem uma gestão mais eficaz e sustentável dos
+          recursos oceânicos.
+        </p>
+        <img src="src/assets/baleia comendo.jpg" alt="baleia">
+      </div>
+      <div class="cont2">
+        <p>
+          Além disso, nossa iniciativa fortalece as economias locais que dependem do turismo e da pesca sustentável. Ao
+          melhorar a qualidade da água e a saúde dos ecossistemas marinhos, promovemos um ambiente mais saudável e
+          resiliente para todos.
+        </p>
+        <img src="src/assets/turismo.jpg" alt="turismo">
+      </div>
+    </section>
+    <section id="section7">
+      <h1>Blu no dia-a-dia</h1>
+      <div class="cont1">
+        <p>
+          Com o aplicativo Blu, você pode monitorar em tempo real o estado de conservação dos oceanos, receber dicas
+          práticas para reduzir sua pegada ambiental e participar de ações locais para limpeza de praias e preservação
+          da
+          vida marinha. Acreditamos que cada pequena ação conta, e com o Blu, você tem o poder de fazer uma grande
+          diferença.
+        </p>
+        <img src="src/assets/limpar.jpg" alt="limpar">
+      </div>
+      <div class="cont2">
+        <p>
+          Participe das nossas campanhas de conscientização, envolva-se em projetos de voluntariado e ajude a espalhar a
+          mensagem sobre a importância de proteger nossos oceanos. Juntos, podemos criar um futuro onde os mares estão
+          limpos e cheios de vida. Junte-se a nós nessa jornada e faça parte da mudança!
+        </p>
+        <img src="src/assets/terra.jpg" alt="terra">
+      </div>
+
     </section>
   </main>
   <footer>
@@ -129,7 +272,7 @@
     </div>
   </footer>
 
-
+  <script src="./src/scripts/redirects.js"></script>
   <script src="./src/scripts/script.js"></script>
 </body>
 
